@@ -134,7 +134,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                             GestureDetector(
                                               onTap: () {
                                                 _subTabIndex.value = 0;
-
                                               },
                                               child: Padding(
                                                 padding: const EdgeInsets.only(
@@ -176,7 +175,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                             GestureDetector(
                                               onTap: () {
                                                 _subTabIndex.value = 1;
-
                                               },
                                               child: Padding(
                                                 padding: const EdgeInsets.only(
@@ -218,7 +216,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                             GestureDetector(
                                               onTap: () {
                                                 _subTabIndex.value = 2;
-
                                               },
                                               child: Padding(
                                                 padding: const EdgeInsets.only(
@@ -314,7 +311,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                   const EdgeInsets.fromLTRB(
                                                       8, 8, 0, 8),
                                               child: SizedBox(
-                                                height: 240,
+                                                height: 220,
                                                 child: ListView(
                                                   scrollDirection:
                                                       Axis.horizontal,
@@ -339,7 +336,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                                     .start,
                                                             children: [
                                                               SizedBox(
-                                                                height: 120,
+                                                                height: 100,
                                                                 child: Center(
                                                                   child: Image
                                                                       .network(
@@ -370,7 +367,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                                         .access_time,
                                                                     size: 12,
                                                                   ),
-                                                                  SizedBox(width: 4),
+                                                                  SizedBox(
+                                                                      width: 4),
                                                                   Text(
                                                                     '2 hr 10 mins',
                                                                     style: TextStyle(
@@ -413,7 +411,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                                     .start,
                                                             children: [
                                                               SizedBox(
-                                                                height: 120,
+                                                                height: 100,
                                                                 child: Center(
                                                                   child: Image
                                                                       .network(
@@ -444,7 +442,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                                         .access_time,
                                                                     size: 12,
                                                                   ),
-                                                                  SizedBox(width: 4),
+                                                                  SizedBox(
+                                                                      width: 4),
                                                                   Text(
                                                                     '2 hr 10 mins',
                                                                     style: TextStyle(
@@ -476,7 +475,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                                   const EdgeInsets.fromLTRB(
                                                       8, 8, 0, 8),
                                               child: SizedBox(
-                                                height: 240,
+                                                height: 220,
                                                 child: Container(
                                                   color: Colors.red,
                                                 ),
@@ -485,6 +484,203 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                           ],
                                         );
                                       },
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            'Top Mentors for you',
+                                            style: TextStyle(fontSize: 20),
+                                          ),
+                                          Text(
+                                            'View all',
+                                            style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.grey,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 100,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: ListView(
+                                          scrollDirection: Axis.horizontal,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right: 8),
+                                              child: Container(
+                                                width: MediaQuery.of(context)
+                                                        .size
+                                                        .width /
+                                                    1.5,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                    topLeft:
+                                                        Radius.circular(16),
+                                                    topRight:
+                                                        Radius.circular(16),
+                                                    bottomRight:
+                                                        Radius.circular(4),
+                                                    bottomLeft:
+                                                        Radius.circular(4),
+                                                  ),
+                                                ),
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 16,
+                                                    vertical: 8),
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      height: 48,
+                                                      width: 48,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.grey[200],
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8),
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          const EdgeInsets.all(
+                                                              8.0),
+                                                      child: Column(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Text(
+                                                            'Quang Tran',
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          SizedBox(height: 4),
+                                                          Text('Flutter Dev'),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    Spacer(),
+                                                    Column(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Icon(
+                                                          Icons
+                                                              .arrow_downward_outlined,
+                                                          color: Colors.pink,
+                                                        ),
+                                                        SizedBox(height: 8),
+                                                        Icon(
+                                                          Icons.chat_outlined,
+                                                          color: Colors.pink,
+                                                        ),
+                                                      ],
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right: 8),
+                                              child: Container(
+                                                width: MediaQuery.of(context)
+                                                        .size
+                                                        .width /
+                                                    1.5,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                    topLeft:
+                                                        Radius.circular(16),
+                                                    topRight:
+                                                        Radius.circular(16),
+                                                    bottomRight:
+                                                        Radius.circular(4),
+                                                    bottomLeft:
+                                                        Radius.circular(4),
+                                                  ),
+                                                ),
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 16,
+                                                    vertical: 8),
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      height: 48,
+                                                      width: 48,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.grey[200],
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8),
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          const EdgeInsets.all(
+                                                              8.0),
+                                                      child: Column(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Text(
+                                                            'Quang Tran',
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          SizedBox(height: 4),
+                                                          Text('Flutter Dev'),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    Spacer(),
+                                                    Column(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Icon(
+                                                          Icons
+                                                              .arrow_downward_outlined,
+                                                          color: Colors.pink,
+                                                        ),
+                                                        SizedBox(height: 8),
+                                                        Icon(
+                                                          Icons.chat_outlined,
+                                                          color: Colors.pink,
+                                                        ),
+                                                      ],
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                     )
                                   ],
                                 ),
